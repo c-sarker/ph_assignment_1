@@ -353,6 +353,73 @@ footer {
   opacity: 1;
   text-decoration: underline;
 }
+/* ---------- Venue ---------- */
+.venue-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.venue-section h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.venue-sub {
+  color: var(--text-gray);
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.venue-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  text-align: left;
+  align-items: stretch;
+}
+
+.venue-details {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.venue-details h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.venue-details p {
+  color: var(--text-gray);
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.venue-details .btn-primary {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.venue-map {
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 320px;
+}
+
+@media (max-width: 800px) {
+  .venue-content {
+    grid-template-columns: 1fr;
+  }
+}
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 800px) {
   header {
